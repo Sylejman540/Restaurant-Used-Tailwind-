@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="ml-4 mr-4 font-mono">
+
+<div class="grid"> <!-- Wrapper-->
+    <!-- Nav Bar --> 
+
+    <div>
+        
+        <h1 class="mt-2 font-bold hover:text-red-200 hover:cursor-pointer flex justify-around">Sulaa
+            <svg class="md:hidden block w-8" id="burger" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+        
+            <div class="hidden md:flex justify-center  text-red-500 mb-2  mr-6">
+                <a href="#" class="ml-4 border-2 rounded-full px-4  hover:bg-red-500 hover:text-white transition duration-500 ease-in p-1">Login</a>
+                <a href="#" class="ml-4 border-2 rounded-full px-4  hover:bg-red-500 hover:text-white transition duration-500 ease-in p-1">Sign Up</a>
+            </div>
+    </h1>
+    </div>
+    <div class="mt-2">
+        
+        
+        <nav class="text-lg grid ml-16" >
+            <ul class="gap-1 mt-2 grid" id="menu">
+                <li class="flex gap-1">
+                    <a href="#" class="font-bold">Home</a>
+                    <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                      </svg>
+                      
+                </li>
+
+
+
+                <li class="flex gap-1">
+                    <a href="#cake">Most favorite</a>
+                    <svg class="w-6"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                        <path d="m4.75 1-.884.884a1.25 1.25 0 1 0 1.768 0L4.75 1ZM11.25 1l-.884.884a1.25 1.25 0 1 0 1.768 0L11.25 1ZM8.884 1.884 8 1l-.884.884a1.25 1.25 0 1 0 1.768 0ZM4 7a2 2 0 0 0-2 2v1.034c.347 0 .694-.056 1.028-.167l.47-.157a4.75 4.75 0 0 1 3.004 0l.47.157a3.25 3.25 0 0 0 2.056 0l.47-.157a4.75 4.75 0 0 1 3.004 0l.47.157c.334.111.681.167 1.028.167V9a2 2 0 0 0-2-2V5.75a.75.75 0 0 0-1.5 0V7H8.75V5.75a.75.75 0 0 0-1.5 0V7H5.5V5.75a.75.75 0 0 0-1.5 0V7ZM14 11.534a4.749 4.749 0 0 1-1.502-.244l-.47-.157a3.25 3.25 0 0 0-2.056 0l-.47.157a4.75 4.75 0 0 1-3.004 0l-.47-.157a3.25 3.25 0 0 0-2.056 0l-.47.157A4.748 4.748 0 0 1 2 11.534V13a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-1.466Z" />
+                      </svg>
+                      
+                </li>
+
+                <li class="flex gap-1">
+                    <a href="#about">About Us</a>
+                    <svg class="w-6"xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                      </svg>
+                      
+                </li>
+            </ul>
+        </nav>
+    </div>
+     
+    
+    <!-- Recipts -->
+
+<div class="grid justify-center md:flex gap-10 mr-6">
+    <div class="grid text-center rounded shadow-md">
+        <img src="images/applepie.jpg" alt="Apple Pie" class="rounded">
+        <span class="mt-4 text-xl font-bold m-2">Pie with apples</span>
+        <span class="font-lighter text-md mb-2">Made by Sulaa</span>
+        <span class="absolute md:top-42 ml-2 bg-red-500 rounded-full px-2">40 Mins</span>
+    </div>
+
+    <div class="grid text-center rounded shadow-md">
+        <img src="images/ham.jpg" alt="Ham" class="h-46 w-68 rounded">
+        <span class="mt-4 text-xl font-bold m-2">Ham with lemons</span>
+        <span class="font-lighter text-md mb-2">Made by Sulaa</span>
+        <span class="absolute md:top-42 ml-2 bg-red-500 rounded-full px-2">50 Mins</span>
+    </div>
+
+    <div class="grid text-center rounded shadow-md">
+        <img src="images/applepie.jpg" alt="Apple Pie" class="rounded">
+        <span class="mt-4 text-xl font-bold m-2">Pie with apples</span>
+        <span class="font-lighter text-md mb-2">Made by Sulaa</span>
+        <span class="absolute md:top-42 ml-2 bg-red-500 rounded-full px-2">25 Mins</span>
+    </div>
+</div>
+
+</div>
+
+<div class="grid justify-center md:flex gap-10 mr-6 mt-12">
+    <div class="grid text-center rounded shadow-md">
+        <img src="images/steak.jpg" alt="Apple Pie" class="rounded h-46 w-68 rounded">
+        <span class="mt-4 text-xl font-bold m-2">Bio steak</span>
+        <span class="font-lighter text-md mb-2">Made by Sulaa</span>
+        <span class="absolute md:top-122 ml-2 bg-red-500 rounded-full px-2">40 Mins</span>
+    </div>
+
+    <div class="grid text-center rounded shadow-md">
+        <img src="images/ham.jpg" alt="Ham" class="h-46 w-68 rounded">
+        <span class="mt-4 text-xl font-bold m-2">Ham with lemons</span>
+        <span class="font-lighter text-md mb-2">Made by Sulaa</span>
+        <span class="absolute  md:top-122 ml-2 bg-red-500 rounded-full px-2">50 Mins</span>
+    </div>
+
+    <div class="grid text-center rounded shadow-md">
+        <img src="images/wine.jpg" alt="Apple Pie" class="rounded h-46 w-68 rounded">
+        <span class="mt-4 text-xl font-bold m-2">Wine from vineyards</span>
+        <span class="font-lighter text-md mb-2">Made by Sulaa</span>
+    </div>
+</div>
+
+<a href="#" class="flex justify-center mt-12 text-xl scale-75">Load More</a>
+
+
+
+<div class="mt-24">
+    <h2 class="text-center mb-10 text-2xl">𝓕𝓮𝓪𝓽𝓾𝓻𝓮𝓭 𝓟𝓻𝓮𝓼𝓼</h2>
+    
+<div class="grid md:flex justify-center text-center gap-20 mt-2">
+    <div>
+        <h2 class="border-2 text-xl px-4 font-bold uppercase mb-2 shadow-md">Cary Magazine</h2>
+        <p class="uppercase font-lighter">2023 maggy awards:best new restaurant</p>
+    </div>
+
+    <div>
+        <h2 class="border-2 text-xl px-4 font-bold uppercase mb-2 shadow-md">Thrillist</h2>
+        <p>The best italian restaurants in atlanta</p>
+    </div>
+
+    <div>
+        <h2 class="border-2 text-xl px-4 font-bold uppercase mb-2 shadow-md">Jezebel</h2>
+        <p>100 hottes restaurants</p>
+    </div>
+
+
+</div>
+</div>
+
+
+<!-- Our Cakes -->
+
+<div class="mt-24" id="cake">
+    <h2 class="font-bold text-xl text-center mr-2">Ours most sold recipes</h2>
+</div>
+
+<div class="grid justify-center md:flex gap-10 mr-6 mt-12">
+    <div class="grid text-center rounded shadow-md">
+        <img src="images/croissant.jpg" alt="Apple Pie" class="h-68 w-68 rounded">
+        <span class="mt-4 text-xl font-bold m-2">Croissant</span>
+        <span class="font-lighter text-md mb-2">Made by Sulaa</span>
+
+    </div>
+
+    <div class="grid text-center rounded shadow-md">
+        <img src="images/popsicle.jpg" alt="Ham" class="h-68 w-68 rounded">
+        <span class="mt-4 text-xl font-bold m-2">Popsicle</span>
+        <span class="font-lighter text-md mb-2">Made by Sulaa</span>
+    </div>
+
+    <div class="grid text-center rounded shadow-md">
+        <img src="images/sandwich.jpg" alt="Apple Pie" class="h-68 w-68 rounded">
+        <span class="mt-4 text-xl font-bold m-2">Sandwich</span>
+        <span class="font-lighter text-md mb-2">Made by Sulaa</span>
+    </div>
+</div>
+
+<!-- About Us -->
+
+    <div class="md:flex md:justify-around grid mt-24" id="about">
+        <div class="text-center">
+        <h2 class="font-bold text-xl">About Us</h2>
+
+        <p class="paragraph font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptatum sint<br> id porro dolorum provident.<br> 
+           Praesentium eum minima dolores voluptas aliquam omnis,<br> dicta atque natus laborum quos autem eius neque.<br>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptatum sint<br> id porro dolorum provident.<br> 
+           Praesentium eum minima dolores voluptas aliquam omnis,<br> dicta atque natus laborum quos autem eius neque.<br>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptatum sint<br> id porro dolorum provident.<br> 
+           Praesentium eum minima dolores voluptas aliquam omnis,<br> dicta atque natus laborum quos autem eius neque.</p>
+        </div>
+
+        <img src="images/restaurant.jpg" alt="Restaurant" class="w-126 h-106">
+    </div>
+
+
+    <footer>
+        <a href="#" class="text-2xl flex justify-center border-t mt-4 hover:scale-75">Powered by An2Tech</a>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
